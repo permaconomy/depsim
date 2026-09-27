@@ -31,38 +31,24 @@ DEPSIM reads `package.json` files, fetches only npm registry metadata (never tar
 
 ## 🚀 Quick Start
 
-### Try Online (30 seconds)
+## 🚀 Try DEPSIM
 
-**Web Demo:** https://permaconomy.github.io/depsim/
+### 1. Web Preflight Demo (Recommended)
+Experience DEPSIM instantly in your browser. No installation required.
+👉 **[Launch Web Demo](https://permaconomy.github.io/depsim/)**
 
-Paste your `package.json` and see instant results!
+### 2. Run the CLI Locally (Windows / macOS / Linux)
+DEPSIM is built in Rust, meaning the same source code compiles and runs perfectly on any operating system without needing pre-compiled binaries.
 
-### Install Binary (2 minutes)
+**Prerequisites:** Ensure you have [Rust](https://rustup.rs/) installed.
 
-**Linux:**
 ```bash
-curl -L https://github.com/permaconomy/depsim/releases/latest/download/depsim-linux-x64 -o depsim
-chmod +x depsim
-sudo mv depsim /usr/local/bin/
-```
+# 1. Clone the repository
+git clone https://github.com/permaconomy/depsim.git
+cd depsim
 
-**macOS (Intel):**
-```bash
-curl -L https://github.com/permaconomy/depsim/releases/latest/download/depsim-macos-x64 -o depsim
-chmod +x depsim
-sudo mv depsim /usr/local/bin/
-```
-
-**macOS (Apple Silicon):**
-```bash
-curl -L https://github.com/permaconomy/depsim/releases/latest/download/depsim-macos-arm64 -o depsim
-chmod +x depsim
-sudo mv depsim /usr/local/bin/
-```
-
-**Windows:**
-Download `depsim-windows-x64.exe` from [releases](https://github.com/permaconomy/depsim/releases/latest) and add to PATH.
-
+# 2. Run the preflight check (Works identically on Windows, Mac, and Linux)
+cargo run --release -- check examples/valid.json
 ---
 
 ## 📖 Usage
