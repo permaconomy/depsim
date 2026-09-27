@@ -305,40 +305,28 @@
             </div>
 
             <!-- Installation Tab -->
-            <div id="install" class="tab-content">
-                <h2 style="margin-bottom: 20px;">Installation</h2>
-                
-                <h3 style="margin: 20px 0 10px;">🐧 Linux</h3>
-                <div class="install-section">
-                    <code>curl -L https://github.com/permaconomy/depsim/releases/latest/download/depsim-linux-x64 -o depsim</code>
-                    <code>chmod +x depsim</code>
-                    <code>sudo mv depsim /usr/local/bin/</code>
-                </div>
+<div id="install" class="tab-content">
+    <h2 style="margin-bottom: 20px;">Installation & Usage</h2>
+    
+    <p style="margin-bottom: 20px; color: #cbd5e1;">
+        DEPSIM is a zero-dependency Rust CLI. For the quickest experience, use the <strong>Try It</strong> tab above for an instant web preflight check.
+    </p>
+    <p style="margin-bottom: 20px; color: #cbd5e1;">
+        For deep, local resolution and conflict detection, run it directly from the source code. Because it is written in Rust, these exact commands work identically on <strong>Windows, macOS, and Linux</strong>.
+    </p>
 
-                <h3 style="margin: 20px 0 10px;">🍎 macOS (Intel)</h3>
-                <div class="install-section">
-                    <code>curl -L https://github.com/permaconomy/depsim/releases/latest/download/depsim-macos-x64 -o depsim</code>
-                    <code>chmod +x depsim</code>
-                    <code>sudo mv depsim /usr/local/bin/</code>
-                </div>
+    <div style="background-color: #0f172a; padding: 20px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 14px; color: #e2e8f0; margin: 20px 0; border: 1px solid #334155; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">
+        <div style="color: #94a3b8; margin-bottom: 8px; font-weight: bold;"># 1. Clone the repository</div>
+        <div style="margin-bottom: 15px;">git clone https://github.com/permaconomy/depsim.git<br>cd depsim</div>
+        
+        <div style="color: #94a3b8; margin-bottom: 8px; font-weight: bold;"># 2. Run the preflight check</div>
+        <div>cargo run --release -- check path/to/package.json</div>
+    </div>
 
-                <h3 style="margin: 20px 0 10px;">🍎 macOS (Apple Silicon)</h3>
-                <div class="install-section">
-                    <code>curl -L https://github.com/permaconomy/depsim/releases/latest/download/depsim-macos-arm64 -o depsim</code>
-                    <code>chmod +x depsim</code>
-                    <code>sudo mv depsim /usr/local/bin/</code>
-                </div>
-
-                <h3 style="margin: 20px 0 10px;">🪟 Windows</h3>
-                <div class="install-section">
-                    <p>Download <a href="https://github.com/permaconomy/depsim/releases/latest/download/depsim-windows-x64.exe" style="color: #667eea;">depsim-windows-x64.exe</a> and add to PATH</p>
-                </div>
-
-                <h3 style="margin: 20px 0 10px;">📦 Via Cargo (Rust)</h3>
-                <div class="install-section">
-                    <code>cargo install depsim</code>
-                </div>
-            </div>
+    <p style="font-size: 14px; color: #94a3b8; margin-top: 20px;">
+        <em>Prerequisite: Ensure you have <a href="https://rustup.rs/" target="_blank" style="color: #667eea; text-decoration: none;">Rust</a> installed on your machine.</em>
+    </p>
+</div>
 
             <!-- Documentation Tab -->
             <div id="docs" class="tab-content">
