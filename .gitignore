@@ -1,0 +1,43 @@
+# Rust
+/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test artifacts
+*.profraw
+*.profdata
+
+# Benchmarks
+/benches/target/
+
+# Documentation
+/target/doc/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Environment
+.env
+.env.local
+
+# Made with Bob
