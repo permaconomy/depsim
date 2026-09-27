@@ -288,6 +288,12 @@
                     <button class="btn-secondary" onclick="clearAll()">🗑️ Clear</button>
                 </div>
 
+                <div style="margin-top: 15px; padding: 10px; background-color: #1e293b; border-left: 4px solid #3b82f6; border-radius: 4px; font-size: 13px; color: #94a3b8;">
+                    <strong>ℹ️ Scope of this Web Demo:</strong> This interface performs a fast, zero-download manifest structure validation.
+                    For deep, npm-accurate resolution and conflict detection, please use the local Rust CLI via the command:
+                    <code style="background: #0f172a; padding: 2px 5px; border-radius: 3px; color: #e2e8f0;">cargo run --release -- check package.json</code>
+                </div>
+
                 <div class="output-section">
                     <label>📊 Resolution Result:</label>
                     <div id="output">
