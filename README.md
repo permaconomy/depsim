@@ -26,8 +26,7 @@ The DEPSIM CLI and deep-resolution engine are currently in private beta.
 ### 📧 Request Early Access
 To integrate the DEPSIM engine into your CI/CD pipeline or get access to the CLI, please contact us:
 
-**Email:** [Your Email Here]  
-**Website:** [Your Website/LinkedIn Here]
+**Email:** aitechmatters@gmail.com
 
 ---
 *Built with Rust for maximum performance and security.*
