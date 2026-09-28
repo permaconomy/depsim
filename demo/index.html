@@ -351,71 +351,51 @@
 
             <!-- Documentation Tab -->
             <div id="docs" class="tab-content">
-                <h2 style="margin-bottom: 20px;">Documentation</h2>
+                         <!-- Documentation Tab -->
+            <div id="docs" class="tab-content">
+                <h2 style="margin-bottom: 20px; color: #f8fafc;">DEPSIM Documentation</h2>
                 
-                <h3>What is DEPSIM?</h3>
-                <p style="margin: 15px 0; line-height: 1.6;">
-                    DEPSIM is a standalone Rust command-line tool that performs registry-only, side-effect-free npm dependency resolution preflight.
-                    It reads package.json files, fetches only npm registry metadata, and predicts resolved versions, dependency edges, and conflicts.
-                </p>
-
-                <div class="features">
-                    <div class="feature">
-                        <h3>⚡ Fast</h3>
-                        <p>Resolves 500-package trees in under 2 seconds using parallel async fetching.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>🔒 Safe</h3>
-                        <p>Never downloads tarballs or executes scripts. Registry metadata only.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>🚀 Portable</h3>
-                        <p>Single static binary. No Node.js or npm required at runtime.</p>
-                    </div>
-                    <div class="feature">
-                        <h3>🎯 Accurate</h3>
-                        <p>npm-compatible semver resolution with conflict detection.</p>
-                    </div>
+                <!-- Overview Section -->
+                <div style="background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; margin-bottom: 25px;">
+                    <h3 style="color: #3b82f6; margin-top: 0;">Registry-Only Dependency Preflight Checker</h3>
+                    <p style="color: #e2e8f0; font-size: 16px; line-height: 1.6;">
+                        Stop <code style="background-color: #0f172a; padding: 2px 6px; border-radius: 4px; color: #f87171;">npm install</code> failures and dependency hell before they happen. 
+                        DEPSIM analyzes your <code style="background-color: #0f172a; padding: 2px 6px; border-radius: 4px; color: #f87171;">package.json</code> against the live npm registry in milliseconds—without downloading a single tarball, executing post-install scripts, or risking supply-chain attacks.
+                    </p>
                 </div>
 
-                <h3 style="margin-top: 30px;">Usage</h3>
-                <div class="install-section">
-                    <code># Analyze package.json in current directory</code>
-                    <code>depsim</code>
-                    <code></code>
-                    <code># Analyze specific package.json</code>
-                    <code>depsim path/to/package.json</code>
-                    <code></code>
-                    <code># JSON output for CI</code>
-                    <code>depsim --json > output.json</code>
-                    <code></code>
-                    <code># Include dev dependencies</code>
-                    <code>depsim --dev</code>
+                <!-- Challenge Section -->
+                <div style="background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #334155; margin-bottom: 25px;">
+                    <h3 style="color: #3b82f6; margin-top: 0;">🧪 The 10,000 Dependency Challenge</h3>
+                    <p style="color: #e2e8f0; font-size: 16px; line-height: 1.6;">
+                        Think your monorepo is too big? <strong>We dare you to break DEPSIM.</strong>
+                    </p>
+                    <p style="color: #cbd5e1; font-size: 16px; line-height: 1.6;">
+                        Drop your most massive, dependency-hell <code style="background-color: #0f172a; padding: 2px 6px; border-radius: 4px; color: #f87171;">package.json</code> into our Web App. See how fast we can parse it, detect conflicts, and map overrides without downloading a single byte.
+                    </p>
+                    <p style="margin-top: 20px; color: #94a3b8; font-size: 14px;">
+                        👉 Head over to the <strong>Try Demo</strong> tab at the top to start the challenge!
+                    </p>
                 </div>
 
-                <h3 style="margin-top: 30px;">What DEPSIM Does NOT Do</h3>
-                <ul style="margin: 15px 0 15px 30px; line-height: 2;">
-                    <li>❌ Does not install packages</li>
-                    <li>❌ Does not download tarballs</li>
-                    <li>❌ Does not execute scripts</li>
-                    <li>❌ Does not require Node.js/npm</li>
-                    <li>❌ Does not modify your project files</li>
-                </ul>
-
-                <h3 style="margin-top: 30px;">Links</h3>
-                <ul style="margin: 15px 0 15px 30px; line-height: 2;">
-                    <li>📖 <a href="https://github.com/permaconomy/depsim" style="color: #667eea;">GitHub Repository</a></li>
-                    <li>📋 <a href="https://github.com/permaconomy/depsim/blob/main/PRD.md" style="color: #667eea;">Product Requirements</a></li>
-                    <li>🐛 <a href="https://github.com/permaconomy/depsim/issues" style="color: #667eea;">Report Issues</a></li>
-                </ul>
+                <!-- Beta Section -->
+                <div style="background-color: #1e293b; padding: 30px; border-radius: 12px; border: 1px solid #3b82f6;">
+                    <h3 style="color: #3b82f6; margin-top: 0;">🏢 Join the Private Beta</h3>
+                    <p style="color: #e2e8f0; font-size: 16px; line-height: 1.6;">
+                        The DEPSIM CLI and deep-resolution engine are currently in closed beta. Join the waitlist to get early access to zero-side-effect local resolution, automated GitHub PR checks, and team dependency health dashboards.
+                    </p>
+                    <p style="margin-top: 20px; color: #94a3b8; font-size: 14px;">
+                        📧 Head over to the <strong>Early Access</strong> tab at the top to join the waitlist!
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <footer>
-            <p>Built with ❤️ by <a href="https://github.com/permaconomy">Permaconomy</a></p>
-            <p style="margin-top: 10px; font-size: 14px;">Open Source • MIT License</p>
-        </footer>
-    </div>
+            <!-- Updated Footer (No more "Open Source") -->
+            <footer style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid #334155; color: #94a3b8;">
+                <p>Built with ❤️ by <a href="https://github.com/permaconomy" style="color: #3b82f6; text-decoration: none;">Permaconomy</a></p>
+                <p style="margin-top: 10px; font-size: 14px;">Proprietary Software • All Rights Reserved</p>
+            </footer>
+        </div>
 
     <script>
         function switchTab(tabName) {
